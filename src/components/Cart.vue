@@ -33,8 +33,13 @@
       </table>
     </div>
   </div>
+
+
+      <div  class="d-flex flex-column align-items-center" v-else>
+      <i class="fa-solid fa-basket-shopping shopping"></i>
+      <h2 class="else" >Cart is empty, Go to  <a class="text-danger" href="/">shopping.</a> </h2>
+      </div>
   
-      <h2 class="else" v-else>No products <i class="fas fa-shopping cart"></i></h2>
 
   </div>
 </template>
@@ -160,6 +165,10 @@ table {
   }
    }
    .else {
+    font-size: 20px;
+   }
+   .shopping{
+    font-size: 60px;
     color: brown;
    }
 
