@@ -13,7 +13,7 @@
 }
 span {
     color: #2DD06E;
-   font-size: 34px;
+   font-size: 20px;
    font-style: normal;
     font-weight: 500;
       line-height: 40px;      
@@ -201,6 +201,7 @@ font-size: 32px;
   #navbar.active {
     // right: 0px;
     left: unset;
+    z-index: 100;
   }
   #navbar li {
     margin-bottom: 25px;
@@ -209,6 +210,7 @@ font-size: 32px;
   #mobile {
     display: flex;
     align-items: center;
+
   }
   #mobile i {
     color: #1a1a1a;

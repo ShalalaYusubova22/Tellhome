@@ -197,4 +197,7 @@ body {
         right: 60px;
         top: 7px;
     }
+    .swiper-button-prev,.swiper-button-next{
+        display: none !important;
+    }
 }

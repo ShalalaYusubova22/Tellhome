@@ -164,6 +164,13 @@ function addToCart() {
     display: flex;
     justify-content: space-between;
     margin-right: 50px;
+
+  @media (max-width:477px) {
+    flex-direction: column;
+    margin-right: 0 !important;
+    justify-content: start;
+  }
+
   }
 
   .small-img-group {
@@ -203,6 +210,9 @@ function addToCart() {
 .swiper {
   width: 100%;
   height: 300px;
+  @media (max-width:477px) {
+    height: 200px !important;
+  }
   margin-left: auto;
   margin-right: auto;
 }

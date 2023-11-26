@@ -76,7 +76,7 @@ footer {
         margin-bottom: 20px;
     }
     .logo {
-        margin-bottom: 30px;
+       
     }
     h4 {
         font-size: 14px;

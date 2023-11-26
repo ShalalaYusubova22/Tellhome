@@ -3,7 +3,7 @@
         <section class="filter-menu">
 
 
-            <div class="d-flex search  justify-content-between">
+            <div class="d-flex search  justify-content-between search-content">
                 <div class="d-flex flex-column">
                     <label for="">Search for name</label>
                     <input v-model="inputValue" @input="handleInputChange" type="text">
@@ -159,7 +159,15 @@ const resetFilters = () => {
 .saleof {
     color: red !important;
 }
-
+@media (max-width:477px) {
+    .search-content{
+        flex-direction: column;
+        ul{
+            margin-top: 20px;
+            flex-direction: column;;
+        }
+    }
+}
 .pro {
     width: 23%;
     min-width: 250px;

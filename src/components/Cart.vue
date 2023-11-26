@@ -9,7 +9,7 @@
         <th>Subtotal</th>
       </tr>
       <tr v-for="product in store" :key="product.id">
-        <td >
+        <td>
           <div class="cart-info">
             <img :src="product?.thumbnail"  alt="" />
             <div>
@@ -104,6 +104,12 @@ table {
   .cart-info {
     display: flex;
     flex-wrap: wrap;
+    @media (max-width:477px) {
+      flex-direction: column;
+      img{
+        width: 140px !important;
+      }
+    }
   }
   p{
     color: brown;
@@ -130,7 +136,8 @@ table {
     }
     img {
       width: 20%;
-      height: 20%;
+      border-radius: 10px;
+      object-fit: cover;
       margin-right: 10px;
     }
   }
