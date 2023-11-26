@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none !important;
+    list-style: none;
+    border: none;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+}
+
+
+.carousel {
+    width: 50%;
+}
+
+.carousel__item {
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        box-shadow: #465b52;
+        border-radius: 10px;
+        filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+
+    }
+}
+
+.carousel__slide {
+    padding: 10px;
+}
+
+.pagination-container {
+    display: flex;
+    column-gap: 10px;
+}
+
+.paginate-buttons {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(242, 242, 242);
+    border: 1px solid rgb(217, 217, 217);
+    color: black;
+}
+
+//   .paginate-buttons:visited
+//   .paginate-buttons:link{
+//     transition: all 0.4s;
+//   }
+.paginate-buttons:hover {
+    background-color: #088178;
+    color: white;
+
+}
+
+.active-page {
+    background-color: #088178;
+    border: 1px solid #088177;
+    color: white;
+}
+
+.active-page:hover {
+    background-color: #088178;
+}
+
+
+.swiper-slide img {
+    width: 130px !important;
+    height: 86px !important;
+    object-fit: contain !important;
+    cursor:pointer
+}
+
+.swiper-slide-active img {
+    height: unset !important;
+    width: inherit !important;
+    cursor:unset
+    
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 30px !important;
+    color: #2E3A59;
+    font-weight: 700;
+}
+
+.swiper-button-next {
+    right: -50px !important
+}
+
+
+.swiper-button-prev {
+    left: -50px !important
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    top: 30%;
+}
+
+.swiper {
+    position: unset;
+}
