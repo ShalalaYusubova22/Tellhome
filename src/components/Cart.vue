@@ -23,7 +23,7 @@
         <td>
          <div class="count d-flex align-items-center">
       <button class="dec"  @click=" product.quantity>1 && product.quantity--">-</button>
-      <input readonly type="number" v-model="product.quantity">
+      <span>{{product?.quantity}}</span>
       <button class="inc" @click="product.quantity++">+</button>
       </div>
       </td>
