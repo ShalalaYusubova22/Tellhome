@@ -20,7 +20,17 @@
             </div>
           </div>
         </td>
-        <td><input class="input" type="number"  v-model="product.quantity" :min="1" /></td>
+        <td>
+         <div class="count d-flex align-items-center">
+      <button class="dec"  @click=" product.quantity>1 && product.quantity--">-</button>
+      <input readonly type="number" v-model="product.quantity">
+      <button class="inc" @click="product.quantity++">+</button>
+      </div>
+      </td>
+
+        
+     
+
         <td>{{ product?.price * product?.quantity}}$</td>
       </tr>
     </table>
@@ -32,6 +42,9 @@
         </tr>
       </table>
     </div>
+
+     
+
   </div>
 
 
@@ -94,13 +107,7 @@ table {
   width: 100%;
   border-collapse: collapse;
 
-  input {
-    border: 1px solid #088178;
-    width: 40px;
-    height: 30px;
-    padding: 5px;
-    color: brown;
-  }
+  
   .cart-info {
     display: flex;
     flex-wrap: wrap;
@@ -177,6 +184,29 @@ table {
    .shopping{
     font-size: 60px;
     color: brown;
+   }
+
+   .count{
+    gap: 10px;
+    input{
+      width: 20px;
+    }
+    .dec{
+      height: 30px;
+    width: 30px;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    .inc{
+      height: 30px;
+    width: 30px;
+    background: #2DD06E;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    }
    }
 
 </style>
