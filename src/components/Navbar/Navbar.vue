@@ -17,18 +17,19 @@
           <li><RouterLink to="">Contact</RouterLink></li>
           <li>
             <RouterLink to="/cart"
-              ><i class="fas fa-shopping-bag"></i
+              ><i class="fas fa-shopping-bag mobile-non"></i
             ></RouterLink>
           </li>
-          <span class="count_basket">{{basket?.basketLength || 0}}</span>
+          <span class="count_basket mobile-non">{{basket?.basketLength || 0}}</span>
           <a href="#" id="close" @click="isNavActive = false"
             ><i class="fas fa-times"></i
           ></a>
         </ul>
       </div>
       <div id="mobile">
-        <RouterLink to="/shop"><i class="fas fa-shopping-bag"></i></RouterLink>
+        <RouterLink to="/cart"><i class="fas fa-shopping-bag"></i></RouterLink>
         <i id="bar" class="fas fa-outdent" @click="isNavActive = true"></i>
+          <span class="count_basket mobile-show">{{basket?.basketLength || 0}}</span>
       </div>
     </section>
   </div>

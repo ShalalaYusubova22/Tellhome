@@ -159,3 +159,42 @@ body {
 .swiper {
     position: unset;
 }
+
+@media (max-width:477px) {
+    .carousel{
+        width: 100%;
+    }
+    .section-p1{
+        padding: 20px 0;
+    }
+    ul{
+        padding-left: 0 !important;
+    }
+    .pro-container{
+        justify-content: center !important;
+        a{
+          
+            border:  4px solid #cce7d0 !important ;
+        }
+    }
+    .pagination-container{
+        column-gap: 4px !important;
+    }
+    #newsletter{
+        height: unset !important;
+        .form{
+            width: 100% !important;
+        }
+      
+    }
+    .mobile-non{
+        display: none;
+    }
+    .mobile-show{
+        font-size: 25px !important;
+        color: red !important;
+        position: absolute;
+        right: 60px;
+        top: 7px;
+    }
+}

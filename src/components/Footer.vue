@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <footer class="section-p1">
+    <footer class="section-p1 footer-over">
       <div class="col">
         <RouterLink to="/"
           ><img src="@/assets/images/logo.svg" class="logo" alt="" /><span class="lgs"
@@ -65,6 +65,9 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media (max-width:477px) {
+      gap: 10px !important;
+    }
     
     .col {
         display: flex;
@@ -99,6 +102,11 @@ footer {
    font-style: normal;
     font-weight: 500;
       line-height: 40px; 
+
+       @media (max-width:477px) {
+     font-size: 20px !important;
+    }
+
       
             }
     }
