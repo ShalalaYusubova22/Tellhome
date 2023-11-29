@@ -10,7 +10,7 @@
 
       <div>
         <ul id="navbar" :class="{ active: isNavActive }">
-          <li><a class="active" href="#home">Home</a></li>
+          <li><a class="active" href="/">Home</a></li>
           <li><RouterLink to="">Shop</RouterLink></li>
           <li><RouterLink to="">Blog</RouterLink></li>
           <li><RouterLink to="">About</RouterLink></li>

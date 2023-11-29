@@ -5,7 +5,7 @@
         <h4>Trade-in-offer</h4>
         <h2>Super value deals</h2>
         <h1>On all products</h1>
-        <RouterLink to="">Shop Now</RouterLink>
+        <RouterLink to="/filter">Shop Now</RouterLink>
       </div>
       <carousel :settings="settings" :breakpoints="breakpoints">
         <slide v-for="product in allProducts" :key="product.id">
